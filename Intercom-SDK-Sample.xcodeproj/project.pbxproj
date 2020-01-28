@@ -14,9 +14,11 @@
 		3850505523E0ED200073A050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3850505423E0ED200073A050 /* Assets.xcassets */; };
 		3850505823E0ED200073A050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3850505623E0ED200073A050 /* LaunchScreen.storyboard */; };
 		3850505B23E0ED200073A050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3850505A23E0ED200073A050 /* main.m */; };
+		D0F749632571BC1BAE133581 /* Pods_Intercom_SDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20051C662EAFB800F22EEC75 /* Pods_Intercom_SDK_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20051C662EAFB800F22EEC75 /* Pods_Intercom_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intercom_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3850504523E0ED1D0073A050 /* Intercom-SDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intercom-SDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3850504823E0ED1D0073A050 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3850504923E0ED1D0073A050 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		3850505723E0ED200073A050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3850505923E0ED200073A050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3850505A23E0ED200073A050 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6338E7F8D2B2100250B9FC2 /* Pods-Intercom-SDK-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intercom-SDK-Sample.release.xcconfig"; path = "Target Support Files/Pods-Intercom-SDK-Sample/Pods-Intercom-SDK-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		E1B1FF236203599FAC2D1B64 /* Pods-Intercom-SDK-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intercom-SDK-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Intercom-SDK-Sample/Pods-Intercom-SDK-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F749632571BC1BAE133581 /* Pods_Intercom_SDK_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				3850504723E0ED1D0073A050 /* Intercom-SDK-Sample */,
 				3850504623E0ED1D0073A050 /* Products */,
+				A03344EE24184736E8464479 /* Pods */,
+				5864928ACFBCD5793BD4535B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = "Intercom-SDK-Sample";
 			sourceTree = "<group>";
 		};
+		5864928ACFBCD5793BD4535B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20051C662EAFB800F22EEC75 /* Pods_Intercom_SDK_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A03344EE24184736E8464479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1B1FF236203599FAC2D1B64 /* Pods-Intercom-SDK-Sample.debug.xcconfig */,
+				A6338E7F8D2B2100250B9FC2 /* Pods-Intercom-SDK-Sample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3850505E23E0ED200073A050 /* Build configuration list for PBXNativeTarget "Intercom-SDK-Sample" */;
 			buildPhases = (
+				C702310604C68D70478413B6 /* [CP] Check Pods Manifest.lock */,
 				3850504123E0ED1D0073A050 /* Sources */,
 				3850504223E0ED1D0073A050 /* Frameworks */,
 				3850504323E0ED1D0073A050 /* Resources */,
+				FF572EFE750B578FEDF25592 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C702310604C68D70478413B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intercom-SDK-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF572EFE750B578FEDF25592 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intercom-SDK-Sample/Pods-Intercom-SDK-Sample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intercom-SDK-Sample/Pods-Intercom-SDK-Sample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intercom-SDK-Sample/Pods-Intercom-SDK-Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3850504123E0ED1D0073A050 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		3850505F23E0ED200073A050 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B1FF236203599FAC2D1B64 /* Pods-Intercom-SDK-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		3850506023E0ED200073A050 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6338E7F8D2B2100250B9FC2 /* Pods-Intercom-SDK-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
