@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Intercom/Intercom.h>
 
 @interface AppDelegate ()
 
@@ -14,9 +15,14 @@
 
 @implementation AppDelegate
 
+    NSString *intercomAPIKey = @"";
+    NSString *intercomAppID = @"";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [Intercom setApiKey:intercomAPIKey forAppId:intercomAppID];
+    [Intercom registerUnidentifiedUser];
+    
     return YES;
 }
 
